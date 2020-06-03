@@ -1,0 +1,117 @@
+html, body
+{
+	background-image: linear-gradient(#141E30, #243B55);
+	font-family: "Calibri";
+	color: white;
+	height: auto; 
+	width: auto;
+  	background-position: center;
+  	background-repeat: repeat;
+  	background-size: cover;
+}
+.main-nav
+{
+	float: left;
+	list-style: none;
+	margin-top: 0px;
+	margin-left: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav button
+{
+	color: black;
+	text-decoration: none;
+	margin: 5px 20px;
+	padding: 5px;
+	font-family: "Calibri";
+	font-size: 25px;
+}
+
+.main-nav li .active
+{
+	border: 10px solid white;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+
+}
+
+#sub
+{
+	font-family: "Calibri";
+	color: white;
+	position: absolute;
+}
+input
+{
+	margin-top: 100px;
+	position: absolute;
+}
+
+table
+{
+	margin-top: 0px;
+	margin-left: 700px;
+	color: black;
+}
+td
+{
+	border: 5px solid orange;
+
+	padding: 15px 30px;
+	background-color: #dddddd;
+	text-align: center;
+	font-size: 30px;
+}
+
+.link:hover {
+  color: #2ecc71;
+  border-bottom: 2px dotted #2ecc71;
+}
+
+#buttons {
+  padding-top: 0px;
+  text-align: left;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.red:hover {
+  background-color: #FF6656;
+}
+
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}

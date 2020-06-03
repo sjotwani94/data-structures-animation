@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="Queue.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="buttons">
+			<a href="#" onclick='Peek()' class="btn red">Peek</a>
+			<a href="#" onclick='Enqueue()' class="btn red">Enqueue</a>
+			<a href="#" onclick='Dequeue();xyz()' class="btn red">Dequeue</a>
+		</div>
+		<div id='sub' style="display: none;">
+			 <input type="text" id="input">
+			<a href="#" onclick='Submit()' class="btn orange">Submit</a>
+		</div>
+
+		<table id='tbl'>
+			<tr>
+				<td id='s0' class='t'>&nbsp</td>
+				<td id='s1' class='t'>&nbsp</td>
+				<td id='s2' class='t'>&nbsp</td>
+				<td id='s3' class='t'>&nbsp</td>
+				<td id='s4' class='t'>&nbsp</td>
+				<td id='s5' class='t'>&nbsp</td>
+				<td id='s6' class='t'>&nbsp</td>
+				<td id='s7' class='t'>&nbsp</td>
+			</tr>
+		</table>
+
+    	<script>
+    		count=0;
+			frontcount=0;
+			function Enqueue()
+			{
+				if (document.getElementById('sub').style.display === 'none')
+						document.getElementById('sub').style.display = 'block';
+				if(count==0)
+				{
+					if(document.getElementById('s0').style.color === 'red')
+						document.getElementById('s0').style.color = 'black';
+				}
+				else if(count==1)
+				{
+					if(document.getElementById('s1').style.color === 'red')
+						document.getElementById('s1').style.color = 'black';
+				}
+ 				else if(count==2)
+				{
+					if(document.getElementById('s2').style.color === 'red')
+						document.getElementById('s2').style.color = 'black';
+				}
+				else if(count==3)
+				{
+					if(document.getElementById('s3').style.color === 'red')
+						document.getElementById('s3').style.color = 'black';
+				}
+				else if(count==4)
+				{
+					if(document.getElementById('s4').style.color === 'red')
+						document.getElementById('s4').style.color = 'black';
+				}
+				else if(count==5)
+				{
+					if(document.getElementById('s5').style.color === 'red')
+						document.getElementById('s5').style.color = 'black';
+				}
+				else if(count==6)
+				{
+					if(document.getElementById('s6').style.color === 'red')
+						document.getElementById('s6').style.color = 'black';
+				}
+				else if(count==7)
+				{
+					if(document.getElementById('s7').style.color === 'red')
+						document.getElementById('s7').style.color = 'black';
+				}
+			}
+
+			function Submit()
+			{
+      			var i = document.getElementById('input').value;
+      			if(i=='')
+      			{
+      				window.alert("Invalid entry. Please enter a character.");
+      			}
+      			else
+      			{
+      				document.getElementById('input').value = '';
+      			if(count==0)
+				{
+					document.getElementById('s0').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==1)
+				{
+					document.getElementById('s1').innerHTML = i;
+					count=count+1;
+				}
+ 				else if(count==2)
+				{
+					document.getElementById('s2').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==3)
+				{
+					document.getElementById('s3').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==4)
+				{
+					document.getElementById('s4').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==5)
+				{
+					document.getElementById('s5').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==6)
+				{
+					document.getElementById('s6').innerHTML = i;
+					count=count+1;
+				}
+				else if(count==7)
+				{
+					document.getElementById('s7').innerHTML = i;
+					count=(count%7);
+				}
+				else if(count>7)
+				{
+					window.alert("Queue overflow. Please Delete at least one element.");
+				}
+				//if(count!=7)
+					//count=count+1;
+				//else
+					//count=(count%7);
+      			}
+      			
+				
+				document.getElementById('s0').style.color = 'black';
+				document.getElementById('s1').style.color = 'black';
+				document.getElementById('s2').style.color = 'black';
+				document.getElementById('s3').style.color = 'black';
+				document.getElementById('s4').style.color = 'black';
+				document.getElementById('s5').style.color = 'black';
+				document.getElementById('s6').style.color = 'black';
+				document.getElementById('s7').style.color = 'black';
+			}
+
+    		function Peek()
+    		{
+				if(count==1)
+				{
+					document.getElementById('s0').style.color = 'red';
+				}			
+ 				else if(count==2)
+				{
+					document.getElementById('s1').style.color = 'red';
+				}
+ 				else if(count==3)
+				{
+					document.getElementById('s2').style.color = 'red';
+				}
+				else if(count==4)
+				{
+					document.getElementById('s3').style.color = 'red';
+				}
+				else if(count==5)
+				{
+					document.getElementById('s4').style.color = 'red';
+				}
+				else if(count==6)
+				{
+					document.getElementById('s5').style.color = 'red';
+				}
+				else if(count==7)
+				{
+					document.getElementById('s6').style.color = 'red';
+				}
+				else if(count==8)
+				{
+					document.getElementById('s7').style.color = 'red';
+				}
+				else if(count==0)
+					window.alert("Stack is empty. Please enter at least one element.");
+				else
+					window.alert("Stack overflow. Please Delete at least one element.");
+				document.getElementsByClassName('t').style.color = 'black';
+			}
+			
+			function Dequeue()
+			{
+				if(frontcount==0 && count==0)
+					window.alert("Queue is empty. Please insert at least one element.");
+				if (document.getElementById('sub').style.display === 'block')
+					document.getElementById('sub').style.display = 'none';
+				if(frontcount==0)
+				{
+					document.getElementById('s0').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==1)
+				{
+					document.getElementById('s1').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==2)
+				{
+					document.getElementById('s2').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==3)
+				{
+					document.getElementById('s3').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==4)
+				{
+					document.getElementById('s4').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==5)
+				{
+					document.getElementById('s5').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==6)
+				{
+					document.getElementById('s6').innerHTML = '&nbsp';
+					frontcount=frontcount+1;
+				}
+				else if(frontcount==7)
+				{
+					document.getElementById('s7').innerHTML = '&nbsp';
+					frontcount=(frontcount%7);
+				}
+				//if(frontcount!=7)
+				//{
+					//frontcount=frontcount+1;
+				//}
+				//else
+				//{
+					//frontcount=(frontcount%7);
+				//}
+				document.getElementById('s0').style.color = 'black';
+				document.getElementById('s1').style.color = 'black';
+				document.getElementById('s2').style.color = 'black';
+				document.getElementById('s3').style.color = 'black';
+				document.getElementById('s4').style.color = 'black';
+				document.getElementById('s5').style.color = 'black';
+				document.getElementById('s6').style.color = 'black';
+				document.getElementById('s7').style.color = 'black';
+			}
+			function xyz()
+			{
+				if(frontcount==count)
+				{
+					frontcount=0;
+					count=0;
+					
+				}
+			}
+
+		</script>
+	</body>
+</html>

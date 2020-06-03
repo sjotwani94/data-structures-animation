@@ -1,0 +1,224 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #242831;
+}
+
+header
+{
+	background-image: url("lines.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+.main-nav
+{
+	float: left;
+	list-style: none;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.main-nav li
+{
+	font-family: "Roboto", sans-serif;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+
+.main-nav li .active
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	text-transform: uppercase;
+	border: 10px solid white;
+	font-size: 13px;
+}
+
+.main-nav li:hover
+{
+	border: 1px solid white;
+}
+
+.logo img
+{
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+body
+{
+	font-family: Codec Warm Trial ExtraBold;
+}
+
+
+.row
+{
+	max-width: 1200px;
+	margin: 10px;
+}
+
+#choose
+{
+	text-align: center;
+	margin-top: 350px;
+	color:ffffff;
+	margin-left: 330px;
+	font-size: 40px;
+	font-family: Codec Warm Trial ExtraBold;
+}
+
+.opt
+{
+  	margin-left: 225px;
+}
+#square1
+{
+	position: relative;
+  	height: 350px;
+  	width: 350px;
+  	background-color: #00adb5;
+  	margin-top: 50px;
+  	opacity: 0.5;
+}
+#square2
+{
+	margin-top: -350px;
+	position: relative;
+  	height: 350px;
+  	width: 350px;
+  	background-color: #fffdf2;
+  	margin-left: 370px;
+  	opacity: 0.5;
+}
+#square3
+{
+	margin-top: -350px;
+	position: relative;
+  	height: 350px;
+  	width: 350px;
+  	background-color: #f8b500;
+  	margin-left: 740px;
+  	opacity: 0.5;
+}
+#square1:hover
+{
+	opacity: 1;
+}
+
+#square2:hover
+{
+	opacity: 1;
+}
+
+#square3:hover
+{
+	opacity: 1;
+
+}
+
+#font1
+{
+	padding-top: 350px;
+	position: relative;
+    font-size:40px;
+	color: #00adb5;
+	font-family: "Codec Warm Trial ExtraBold";
+	margin-bottom: 50px;
+}
+
+#font2
+{
+	padding-top: 350px;
+	position: relative;
+    font-size:40px;
+	color: #fffdf2;
+	font-family: "Codec Warm Trial ExtraBold";
+	margin-bottom: 50px;
+}
+
+#font3
+{
+	padding-top: 350px;
+	position: relative;
+    font-size:40px;
+	color: #f8b500;
+	font-family: "Codec Warm Trial ExtraBold";
+	margin-bottom: 150px;
+}
+
+.main
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	margin-left: 30px;
+	padding-right: 300px;
+}
+
+#line1
+{
+	margin-top: 275px;
+}
+
+.button
+{
+	margin-top: 30px;
+	margin-left: 400px;
+}
+
+.btn
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.btn-one
+{
+	background-color: transparent;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+.btn-one:hover
+{
+	background-color: darkorange;
+	transition: all .4s ease-in;
+}
+
+.active
+{
+	
+}
+.active:hover
+{
+	background-color: darkorange;
+	transition: all .4s ease-in;
+}
