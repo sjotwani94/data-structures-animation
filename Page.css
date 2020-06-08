@@ -179,9 +179,26 @@ h1
 	padding-right: 300px;
 }
 
+#credits
+{
+	color: white;
+	margin-left: -280px;
+	text-align: center;
+}
+
+#link
+{
+	color: #1eff00;
+}
+
+#link:hover
+{
+	color: #0000ff;
+}
+
 #line1
 {
-	margin-top: 275px;
+	margin-top: 200px;
 }
 
 .button
